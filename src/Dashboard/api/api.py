@@ -1,4 +1,5 @@
 import os
+import time
 import json
 import Dashboard.globels as globals
 from jira.client import JIRA
@@ -14,17 +15,10 @@ def get_api():
     issues = jira.search_issues('ORDER BY created DESC', maxResults=500, json_result=True)
     print(issues)
 
-
     with open(os.path.join(globals.storage_path, "info.json"), "w") as file:
         json.dump(issues, file, indent=4)
 
 
-
-
-def get_infos():
-    with open(os.path.join(globals.storage_path, "info.json"), "r") as file:
-        for item in file:
-            print(item)
-
-
-#get_infos()
+while True:
+    get_api()
+    time.sleep(30)

@@ -2,32 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
+    <title>R&S Cybersecurity Dashboard</title>
     <link rel="stylesheet" href="_resources/Css/style.css">
 </head>
 <body>
-    <h3 class="header">Dashboard</h3>    
-    <div class="box">
-        <div class="red-box">
+    <h3 class="header">R&S Cybersecurity</h3> 
+    <div class="name">
+        <h3 id="name">Customer Support Dashboard</h3>
+
+    </div>   
+    <div class="row">
+        
+        <div class="box red">
             <h3 id="openTicketsCount" >0</h3>
             <p>open Ticket count</p>
             <small>over all</small>           
         </div>
-        <div class="orange-box">
+        <div class="box orange">
             <h3 id="newTickets">0</h3>
             <p>New tickets</p>
             <small>Current week</small>
         </div>
-        <div class="green-box">
+        <div class="box green">
             <h3 id="closedTicket">0</h3>
             <p>Closed tickets</p>
             <small>Current week</small>
         </div>
-        <div class="blue-box">
+        <div class="box blue">
             <h3 id="customerSatisfaction">0</h3>
             <p>Customer Satisfaction</p>
             <small>Current week</small>
         </div>
+    
+    </div>
+    <div class="row">
+    <div class="queue">
+        <div class="q-box">
+            <h3>Ticket queue</h3>
+
+        </div>
+        <div class="q-body">
+                <div id="ticketQueue" class="row" >
+
+                </div>
+        </div>
+
+    </div>
     </div>
     <footer>
 

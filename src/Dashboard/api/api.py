@@ -13,7 +13,7 @@ def get_api():
                 basic_auth=globals.auth)
 
     issues = jira.search_issues('ORDER BY created DESC', maxResults=500, json_result=True)
-    print(issues)
+
 
     with open(os.path.join(globals.storage_path, "info.json"), "w") as file:
         json.dump(issues, file, indent=4)
@@ -21,4 +21,5 @@ def get_api():
 
 while True:
     get_api()
+    print("geholt")
     time.sleep(30)

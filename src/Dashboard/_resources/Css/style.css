@@ -7,6 +7,30 @@ body{
     font-weight: 400;
 }
 
+h3{
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p{
+    font-size: 15px;
+    margin: 0 0 10px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+small{
+    font-size: 15px;
+    margin: 0 0 -5px;
+}
+
 .name h3{
     padding: 15px 15px 0 15px;
     position: relative;
@@ -25,10 +49,10 @@ body{
 }
 
     .box{
-        width: 25%;
+        width: 23%;
         padding: 10px;
         color: white;
-        margin: 15px;
+        margin: auto;
 
 
     }
@@ -69,24 +93,30 @@ body{
 
 
 .header{
-    margin: 0px;
+    margin: 0;
     padding: 25px;
     background-color: deepskyblue;
     margin: 0px;
-    border: none;
+    border: none;flex-wrap: wrap;
     position: relative;
 
 }
 .queue{
-    width: 100%;
+    width: auto;
     float: left;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     min-height: 1px;
     position: relative;
 }
+
+.q-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
     .q-box{
-        display: block;
+        display: flex;
         position: relative;
         border-radius: 3px;
         background-color:  white;
@@ -120,11 +150,52 @@ body{
 
     }
         .queueElement{
-            margin:  0 15px 10px 15px ;
-            width: 23%;
+            margin:  auto ;
+            margin-bottom: 15px;
+            padding: 15px;
+            width: 22%;
             background-color: #00a65a;
             display: flex;
             flex-direction: column;
             
         }
 
+        .command{
+            margin:  auto ;
+            margin-bottom: 15px;
+            padding: 15px;
+            width: 22%;
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sla{
+            margin:  auto ;
+            margin-bottom: 15px;
+            padding: 15px;
+            width: 22%;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dueToday{
+            margin:  auto ;
+            margin-bottom: 15px;
+            padding: 15px;
+            width: 22%;
+            background-color: green;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .week4{
+            margin:  auto ;
+            margin-bottom: 15px;
+            padding: 15px;
+            width: 22%;
+            background-color: skyblue;
+            display: flex;
+            flex-direction: column;
+        }
